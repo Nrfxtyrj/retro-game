@@ -1,0 +1,61 @@
+body {
+    background-image: url(https://art.pixilart.com/a974fe907a72df3.gif);
+    background-size: 100% 900px;
+    position: relative;
+}
+
+.game {
+    top: 0;
+    width: 1800px;
+    height: 200px;
+    border-bottom: 1px solid #000;
+    margin: auto;
+    position: absolute;
+}
+
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/boll.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus {
+    width: 50px;
+    height: 40px;
+    background-image: url(img/stone.png);
+    background-size: 50px 40px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 1s infinite linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 1780px;
+    }
+    100% {
+        left: -30px;
+    }
+}
+.jump {
+    animation: jump 0.4s linear;
+}
+@keyframes jump  {
+    0% {
+        top: 130px;
+    }
+    30% {
+        top: 100px;
+    }
+    50% {
+        top: 50px;
+    }
+    80% {
+        top: 100px;
+    }
+    100% {
+        top: 150px;
+    }
+}

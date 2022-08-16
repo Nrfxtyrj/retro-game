@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: rgb(228, 175, 175);
+    background-image: url(https://i.pinimg.com/originals/dc/ca/4c/dcca4c20678fae5d2994151ee5768581.gif);
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+}
+.content {
+    width: 600px;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+ }
+.link img {
+    width: 300px;
+    height: 150px;
+    
+}
+a {
+    width: 100%;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+
+}
+a img {
+    width: 100%;
+    height: 100px;
+}
+
+.btn {
+    font-size: 100px;
+    height: 500px;
+    margin: 100px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px #0fa,
+        0 0 82px #0fa,
+        0 0 92px #0fa,
+        0 0 102px #0fa,
+        0 0 151px #0fa;
+}
+
+.link {
+    -webkit-animation: shake .7s linear alternкакate infinite;
+    animation: shake .7s linear alternate infinite;
+}
+
+@keyframes  shake {
+    100% {
+      -webkit-transform: translateY(-30px);    
+    }
+  }
+
+  

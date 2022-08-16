@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-image: url(https://i.gifer.com/SOCa.gif);
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+}
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+}
+.block {
+    background-image: url(imgplay/lock.png);
+    width: 450px;
+    height: 200px;
+    background-size: 450px 200px;
+}
+.block-one {
+    background-image: url(imgplay/gameone.JPG);
+     width: 450px;
+     height: 200px;
+     background-size: 450px 200px;
+ }
+ 
+.btn {
+    font-size: 100px;
+    height: 100px;
+    margin: 40px;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(0, 168, 235),
+        0 0 82px rgb(0, 168, 235),
+        0 0 92px rgb(0, 168, 235),
+        0 0 102px rgb(0, 168, 235),
+        0 0 151px rgb(0, 168, 235);
+    text-align: center;
+}
+
+.block-one a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    display: block; 
+    text-align: center;
+    padding: 70px ;
+    font-size: 60px;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(235, 0, 0),
+        0 0 82px rgb(255, 0, 0),
+        0 0 92px rgb(255, 0, 0),
+        0 0 102px rgb(255, 0, 0),
+        0 0 151px rgb(255, 0, 0);
+ }

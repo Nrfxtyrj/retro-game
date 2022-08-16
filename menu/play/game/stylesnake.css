@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
+body {
+    background-color: rgb(228, 175, 175);
+    background-image: url(imggame/room.gif);
+    background-size: 100%;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.btn {
+    font-size: 100px;
+    height: 500px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(189, 75, 255),
+        0 0 82px rgb(189, 75, 255),
+        0 0 92px rgb(189, 75, 255),
+        0 0 102px rgb(189, 75, 255),
+        0 0 151px rgb(189, 75, 255);
+        text-align: center;
+
+        
+}
+
+
+canvas {
+    display: block;
+    margin: 0 auto;
+    margin-top: 100px;
+    font-family: 'Press Start 2P', cursive;
+}

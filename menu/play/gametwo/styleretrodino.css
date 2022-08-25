@@ -1,39 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 body {
-    background-image: url(https://art.pixilart.com/a974fe907a72df3.gif);
-    background-size: 100% 900px;
+    background-image: url(img/mainarena.gif);
+    background-size: 90%;
     position: relative;
+    font-family: 'Press Start 2P', cursive;
 }
 
 .game {
+    z-index: 0;
+    background-image: url(img/arena.gif);
     top: 0;
-    width: 1800px;
-    height: 200px;
+    width: 1024px;
+    height: 576px;
     border-bottom: 1px solid #000;
-    margin: auto;
-    position: absolute;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
 }
 
 #dino {
-    width: 50px;
-    height: 50px;
-    background-image: url(img/boll.png);
-    background-size: 50px 50px;
-    position: relative;
-    top: 150px;
+    width: 250px;
+    height: 250px;
+    background-image: url(img/boy.gif);
+    background-size: 250px 250px;
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    
 }
 #cactus {
-    width: 50px;
-    height: 40px;
+    width: 70px;
+    height: 30px;
     background-image: url(img/stone.png);
-    background-size: 50px 40px;
-    position: relative;
-    top: 110px;
-    left: 580px;
+    background-size: 70px 30px;
+    position: absolute;
+    top: 525px;
+    left: 530px;
     animation: cactusMov 1s infinite linear;
+}
+#cloud {
+    width: 1000px;
+    height: 270px;
+    opacity: 0.7; 
+    background-image: url(img/cloud.png);
+    background-size: 1000px 400px;
+    position: absolute;
+    top: -50px;
+    left: 580px;
+    animation: cloudMov 20s infinite linear;
+}
+
+#resuilt {
+    z-index: 3;
+}
+@keyframes cloudMov {
+    0% {
+        left: 925px;
+    }
+    100% {
+        left: -1508px;
+    }
 }
 @keyframes cactusMov {
     0% {
-        left: 1780px;
+        left: 950px;
     }
     100% {
         left: -30px;
@@ -44,18 +76,120 @@ body {
 }
 @keyframes jump  {
     0% {
-        top: 130px;
+        top: 320px;
     }
     30% {
-        top: 100px;
+        top: 270px;
     }
     50% {
-        top: 50px;
+        top: 220px;
+    }
+    60% {
+        top: 250px;
+    }
+    70% {
+        top: 270px;
     }
     80% {
-        top: 100px;
+        top: 290px;
+    }
+    90% {
+        top: 300px;
     }
     100% {
-        top: 150px;
+        top: 320px;
     }
+}
+
+img.rot {
+    animation: 1s linear 0s normal none infinite running rot;
+    -webkit-animation: 1s linear 0s normal none infinite running rot;
+    width: 150px;
+    position: absolute;
+    top: 400px;
+  }
+  @keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  @-webkit-keyframes rot {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+
+  .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color:  rgba(0, 0, 0, 0.5);;
+}
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 35%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.link a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #888;
+    padding: 10px;
+
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn {
+    font-size: 100px;
+    height: 200px;
+    margin: 0 auto;
+    color: #fff;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(255, 166, 0),
+        0 0 82px rgb(255, 166, 0),
+        0 0 92px rgb(255, 166, 0),
+        0 0 102px rgb(255, 166, 0),
+        0 0 151px rgb(255, 166, 0);
+        text-align: center;
+    position: absolute;
+    z-index: +3;
+    top: 590px;
+    left: 27%;
+} 
+.info {
+    font-size: 30px;
+    text-align: center;
+}
+
+#score {
+    margin: 10px;
 }

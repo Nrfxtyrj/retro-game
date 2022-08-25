@@ -1,6 +1,8 @@
 const canvas = document.getElementById("game");
 const ctx = canvas.getContext("2d");
-let dir
+let modal = document.getElementById('myModal');
+const p = document.getElementById('resuilt');
+let dir;
 
 const ground = new Image();
 ground.src = "imggame/arena.png";
@@ -42,8 +44,10 @@ function drawGame () {
     let snakeX = snake[0].x;
     let snakeY = snake[0].y; 
 
-    if(snakeX < box || snakeY > box * 17 || snakeY < 3 * box || snakeY > box * 17) {
+    if(snakeX < box || snakeY > box * 17 || snakeY < 3 * box || snakeY > box * 17 || snakeX > box * 17) {
         clearInterval(game)
+        modal.style.display = "block";
+        p.innerHTML= `Sсore: ${score}`;
     }
 
     if(dir == "left"){
@@ -70,12 +74,12 @@ function drawGame () {
     ctx.drawImage (foodImg, food.x, food.y);
 
     for (let i = 0; i < snake.length; i++) {
-        ctx.fillStyle = "red";
+        ctx.fillStyle = "rgb(209, 7, 132)";
         ctx.fillRect (snake[i].x, snake[i].y, box, box);
     }
     
     ctx.fillStyle = "white";
-    ctx.font = "60px Arial";
+    ctx.font = "40px Arial";
     ctx.fillText(score, box * 2.5, box * 1.7);
 
     if(snakeX == food.x && snakeY == food.y){
@@ -87,15 +91,6 @@ function drawGame () {
     }else {
         snake.pop();
     }
-
 }
 
-function eatTail (head, arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (head.x == arr[i].x && head.y == arr[i].y)
-        clearInterval(game);
-    }
-    eatTail(newHead, snake)
-}
-
-let game = setInterval (drawGame, 100);
+let game = setInterval (drawGame, 150);

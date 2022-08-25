@@ -10,8 +10,19 @@
 </head>
 <body>
     
-    <canvas id="game" width="608" height="608"></canvas>
-    <div class="btn">Retro Game</div>
+    <canvas id="game" width="608" height="608">
+    </canvas>
+    <div class="btn">Snake Game</div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="resuilt"></p>
+            <p class="info">GAME OVER!!!</p>
+            <div class="menu">
+            <div class="link"><a class="link" href="snake.html">RESTART</a></div>
+            <div class="link"><a class="link" onclick="javascript:history.back(-2); return false;" >PLAY MENU</a></div>
+            </div>
+        </div>
+    </div>
     <script src="scriptsnake.js"></script>
 </body>
 </html>

@@ -11,7 +11,7 @@ body {
     justify-content: space-between;
     margin: 40px;
 }
-.block {
+#block {
     background-image: url(imgplay/lock.png);
     width: 450px;
     height: 200px;
@@ -23,7 +23,12 @@ body {
      height: 200px;
      background-size: 450px 200px;
  }
- 
+ .block-two {
+    background-image: url(imgplay/gametwo.JPG);
+     width: 450px;
+     height: 200px;
+     background-size: 455px 210px;
+ }
 .btn {
     font-size: 100px;
     height: 100px;
@@ -59,4 +64,29 @@ body {
         0 0 92px rgb(255, 0, 0),
         0 0 102px rgb(255, 0, 0),
         0 0 151px rgb(255, 0, 0);
+ }
+ .block-two a {
+    text-decoration: none;
+    color: aliceblue;
+    text-align: center;
+    margin: 0 auto;
+    display: block; 
+    text-align: center;
+    padding: 70px ;
+    font-size: 60px;
+    text-shadow:
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 42px rgb(217, 255, 0),
+        0 0 82px rgb(217, 255, 0),
+        0 0 92px rgb(217, 255, 0),
+        0 0 102px rgb(217, 255, 0),
+        0 0 151px rgb(217, 255, 0);
+ }
+
+ .userName {
+    z-index: +1;
+    color: #000;
+    font-size: 60px;
  }

@@ -8,9 +8,23 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="btn">RUN Game</div>
     <div class="game">
+        <p id="score">Score: 0</p>
+        <div id="stone"><img class="rot" src="img/bigstone.png" ></div>
+        <div id="cloud"></div>
         <div id="dino"></div>
         <div id="cactus"></div>
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <p id="resuilt"></p>
+            <p class="info">GAME OVER!!!</p>
+            <div class="menu">   
+            <div class="link"><a class="link" href="retrodino.html">RESTART</a></div>
+            <div class="link"><a class="link" onclick="javascript:history.back(-1); return false;" >PLAY MENU</a></div>
+            </div>
+        </div>
     </div>
     <script src="scriptretrodino.js"></script>
 </body>
